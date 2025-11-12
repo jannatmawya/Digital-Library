@@ -1,0 +1,104 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(15, 15, 36);
+  color: #fff;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(15,15,36);
+  padding: 10px 5%;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-section img { 
+  width: 50px; 
+  height: 50px; 
+  border-radius: 10px; 
+}
+.logo-section h1 { 
+  margin: 0; 
+  font-size: 24px; 
+  color: #fbfbfb; 
+}
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { 
+  text-decoration: none; 
+  color: #fff; 
+  font-weight: bold; 
+  transition: 0.3s; 
+}
+.nav-links a:hover { color: #ffeb3b; }
+
+/* ABOUT  */
+.about-container {
+  padding: 40px 10%;
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+}
+.about-container h2 {
+  color: #ffeb3b;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-decoration: underline;
+}
+.about-container p {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+.about-container q {
+  font-style: italic;
+  color: #ffc107;
+}
+.about-container ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.about-container ul li {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgb(15,15,36);
+  color: #fff;
+  font-size: 14px;
+  border-top:1px solid #333;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .profile-container { 
+    flex-direction: column; align-items: center; }
+  .BroadGroups { 
+    flex: 1; 
+    width: 100%;
+  }
+  .MyProfileInformation { 
+    flex: 1; 
+    width:100%;
+  }
+  .book-grid { grid-template-columns: 1fr; }
+}
