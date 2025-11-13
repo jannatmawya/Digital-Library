@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(15, 15, 36);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container that holds both sides */
+.whole2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* full height of screen */
+    padding: 0 50px;
+}
+
+/* Left side (form) */
+.main2 {
+    width: 40%;
+}
+
+.main2 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main2 h4, .main h5 {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+/* Right side (image) */
+.img2 {
+    
+    height: auto;
+    border-radius: 10px;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
