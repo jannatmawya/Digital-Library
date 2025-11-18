@@ -4,10 +4,11 @@
   padding: 0;
 }
 body {
-   width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
   background-color: rgb(15, 15, 36);
   margin: auto;
 }
@@ -54,15 +55,11 @@ nav li a {
   text-decoration: none;
   color: aliceblue;
 }
-
-nav li a:hover {
-   color: #ffeb3b
-}
-#login{
+#Profile {
   color: black;
-   background-color: #fad97e;
-   padding: 6px 10px;
-   height: auto;
+  background-color: #fad97e;
+  padding: 6px 10px;
+  height: auto;
   border-radius: 5px;
 }
 .origin {
@@ -118,6 +115,14 @@ button {
   padding: 1rem 2rem;
   border-radius: 5px;
 }
+.vdandmore {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 .right {
   display: flex;
   position: relative;
@@ -129,83 +134,57 @@ button {
 .right img {
   width: 75%;
 }
-
-.popular {
-  display: flex;
-  flex-direction: column;
+.left1 {
+  width: 45%;
+}
+.left1 h3 {
+  width: 50%;
   color: aliceblue;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 300px;
+  margin: 70px;
 }
-
-.popular h2 {
-  margin: auto;
-}
-
-.books {
+.left1 iframe {
+  margin: 70px;
   display: flex;
   flex-direction: row;
-  width: 200%;
-  max-width: 90vw;
-  gap:20px;
-  overflow:visible;
-  justify-content: center;
-  animation: slide 15s linear infinite;
-  
+  margin-top: 0%;
 }
-
-.group{
+.right1 h3 {
   display: flex;
+  flex-direction: row;
+  text-align: right;
+  align-items: center;
+  width: 45%;
+  color: aliceblue;
+  margin: 70px;
 }
-
-@keyframes slide{
-  0%{
-    transform: translateX(0) ;
-  }
-  100%{
-    transform: translateX(-50%) ;
-  }
+.right1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
 }
-
-.book {
-  border-radius: 12px;
-  padding: 10px; 
-  width: 180px;
-  height: auto;
-  text-align: center;
-  transition: transform 0.3s ease;
+.imglist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-
-.book a{
-  text-decoration: none;
+.imglist img {
+  width: 30%;
 }
-
-.book img{
-  transition: scale 2s ease-in-out;
-  height: auto;
-  width: 150px;
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  color: aliceblue;
+  width: 90%;
+  margin: auto;
 }
-.books img:hover{
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+.summary h2 {
+  margin-bottom: 10px;
 }
-.book h3 {
-  font-size: 15px;
-  color: white;
-  margin: 5px 0;
-}  
-.book p{
-   color: #cccccc;
+.summary p {
+  margin-top: 10px;
 }
-
-@media screen and (max-width: 768px) {
-  .origin {
-    flex-direction: column;
-  }
-}
-
-
 footer {
   text-align: center;
   padding: 15px 0;
@@ -214,4 +193,18 @@ footer {
   font-size: 14px;
   border-top: 1px solid #333;
 
+}
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgb(15, 15, 36);
+  color: #fff;
+  font-size: 14px;
+  border-top: 1px solid #333;
+
+}
+@media screen and (max-width: 768px) {
+  .vdandmore {
+    flex-direction: column;
+  }
 }

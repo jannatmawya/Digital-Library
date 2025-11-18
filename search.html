@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookish-Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./CSS/search.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./Assets/Images/logo.png " alt="logo" />
+          <h3>BOOKISH</h3>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <a href="./khurafati.html">Home</a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./search.html">Search</a>
+            </li>
+            <li>
+              <a href="./profile.html">My Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="searchcontainer">
+      <h1>
+        Explore and Search for <span style="color: orange">Any Book</span>
+      </h1>
+      <input type="text" id="searchBox" placeholder="Search books..." />
+      <i class="fa fa-search"></i>
+    </div>
+    <div class="bookgrid">
+      <div class="title">Search Results</div>
+
+      <div class="filter">
+        <label for="departments"></label>
+        <select name="departments" id="departments">
+          <option value="" selected disabled hidden>
+            Filter By: Departments
+          </option>
+
+          <option value="comedy">Comedy</option>
+          <option value="crime">Crime</option>
+          <option value="horror">Horror</option>
+          <option value="mystery">Mystery</option>
+          <option value="novel">Novel</option>
+          <option value="poetry">Poetry</option>
+          <option value="romance">Romance</option>
+          <option value="suspense">Suspense</option>
+          <option value="short-stories">Short-stories</option>
+          <option value="thriller">Thriller</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="book-container">
+      <div class="book">
+        <a href="./bdetails.html">
+          <img src="./Assets/Images/img (1).png" alt="Origin" />
+
+          <h3>Origin - By Dan Brown</h3>
+          <p class="genre">Thriller / Mystery</p></a
+        >
+      </div>
+      <div class="book">
+        <a href="./bdetails1.html">
+          <img src="./Assets/Images/img (2).png" alt="fury" />
+          <h3>The Fury - By Alex Michaelides</h3>
+          <p class="genre">Thriller / Psychological</p></a
+        >
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/img (3).png" alt="maiden" />
+        <h3>The Maidens - By Alex Michaelides</h3>
+        <p class="genre">Thriller / Psychological</p>
+      </div>
+      <div class="book">
+        <a href="./bdetails3.html">
+          <img src="./Assets/Images/img (4).png" alt="game" />
+          <h3>Gerald's Game - By Stephen King</h3>
+          <p class="genre">Horror Games</p></a
+        >
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/img (5).png" alt="turn" />
+        <h3>Don't Turn Around - By Jessica Barry</h3>
+        <p class="genre">Thriller / Suspense</p>
+      </div>
+      <div class="book">
+        <a href="./bdetails2.html">
+          <img src="./Assets/Images/img (6).png" alt="amazing" />
+          <h3>The Huge Book of Amazing Facts</h3>
+          <p class="genre">Facts / Fiction</p></a
+        >
+      </div>
+      <div class="book">
+        <img
+          src="./Assets/Images/Untitled design (12).png"
+          alt="Child's poem"
+        />
+        <h3>A Child's Book of Poems - By Gyo Fujikawa</h3>
+        <p class="genre">Poetry</p>
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/Untitled design (13).png" alt="fury" />
+        <h3>T.H.E. Authoritative Calvin and Hobbes - By Bill Watterson</h3>
+        <p class="genre">Comic / Humor / Fiction</p>
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/Untitled design (10).png" alt="maiden" />
+        <h3>Atomic Habits - By James Clear</h3>
+        <p class="genre">Self-help</p>
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/Untitled design (14).png" alt="game" />
+        <h3>Whose Body? - By Dorothy L. Sayers</h3>
+        <p class="genre">Mystery / Novel</p>
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/Untitled design (15).png" alt="turn" />
+        <h3>The Adventures of Sherlock Holmes - By Arthur Conan Doyle</h3>
+        <p class="genre">Crime / Fiction</p>
+      </div>
+      <div class="book">
+        <img src="./Assets/Images/Untitled design (16).png" alt="amazing" />
+        <h3>The Winter's Tale - By William Shakespeare</h3>
+        <p class="genre">Tragicomedy / Romance</p>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button>&lt;</button>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>&gt;</button>
+    </div>
+    <script src="./JS/search.js" defer></script>
+  </body>
+</html>

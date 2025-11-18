@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: rgb(15, 15, 36);
+  color: #fff;
+}
+
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(15, 15, 36);
+  padding: 10px 5%;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo-section img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.logo-section h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #ffeb3b;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 8%;
+  gap: 40px;
+  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: row;
+}
+
+.ProfileInformation {
+  background: rgb(15, 15, 36);
+  padding: 30px;
+  border-radius: 10px;
+  /* flex: 0 0 30%; */
+  min-width: 220px;
+  min-height: 400px;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  line-height: 2;
+  letter-spacing: 0.5px;
+
+}
+.ProfileInformation h2 {
+  color: #ffeb3b;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.ProfileInformation p {
+  margin: 10px 0;
+  color: #fff;
+  font-size: 15px;
+}
+.ProfileInformation b {
+  color: #f5f5f5;
+}
+.ProfileInformation img{
+    max-width: 400px;
+    padding: 10px;
+    
+}
+
+.Borrowed {
+  background: rgb(15, 15, 36);
+  padding: 40px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex: 0 0 50%;
+}
+
+.Borrowed h2 {
+  color: #ffeb3b;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: 400px;
+}
+
+.book-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  width: auto;
+  height: 80%;
+  padding: 30px;
+  margin: 30px;
+}
+
+.book-box img {
+  width: auto;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.book-box:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgb(14, 14, 17);
+  color: #fff;
+  font-size: 14px;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .BroadGroups {
+    flex: 1;
+    width: 100%;
+  }
+  .MyProfileInformation {
+    flex: 1;
+    width: 100%;
+  }
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+}
